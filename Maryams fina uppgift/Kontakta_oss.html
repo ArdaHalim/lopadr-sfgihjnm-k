@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Jannes delikatesser</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Jannes delikatesser</div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Hem</a></li>
+                <li><a href="Meny.html">Meny</a></li>
+                <li><a href="Kontakta_oss.html">kontakta oss</a></li>
+                <li><a href="Mina_beställningar.html">Mina beställningar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h1>Kontakta oss</h1>
+        <form class="contact-form">
+            <label for="fname">Förnamn:</label>
+            <input type="text" id="fname" name="fname" required>
+    
+            <label for="lname">Efternamn:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+
+</html>

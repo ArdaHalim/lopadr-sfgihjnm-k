@@ -1,0 +1,154 @@
+$primary-color: #2c3e50; // Mörkblå
+$accent-color: #e74c3c; // Mörkröd
+$background-color: #34495e; // Mörkgrå
+$text-color: #ecf0f1; // Vit
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    .logo {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    color: $text-color;
+                    text-decoration: none;
+                    transition: color 0.3s;
+                    padding: 10px;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Dagens_rätter {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 240px;
+    display: flex;
+    justify-content: center;  // Centrera horisontellt
+    align-items: center;  // Centrera vertikalt
+
+    li {
+        margin: 0px;
+    }
+}
+
+
+.Bilder {
+    display: flex;  // Använd flexbox för att placera bilderna i rad
+    justify-content: center;  // Fördela utrymmet mellan bilderna
+    align-items: center; 
+    gap: 40px; // Centrera bilderna vertikalt
+
+    img {
+        width: 30%;
+        height: 90%;  // Ange en önskad bredd för bilderna
+        border-radius: 8px;  // Runda hörnen om du vill ha avrundade hörn
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  // Lägg till en skugga för effekt
+        transition: transform 0.3s;  // Lägg till en övergångseffekt vid hovring
+
+        &:hover {
+            transform: scale(1.05);  // Zooma in lite när användaren hovrar över bilden
+        }
+    }
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: fr 3fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #2c3e50;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: $accent-color;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        label {
+            color: $accent-color;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $accent-color;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: $accent-color;
+            color: $text-color;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($accent-color, 10%);
+            }
+        }
+    }
+}
+
+.Beskrivning{
+    color: gray;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 90px;
+    display: flex;
+    justify-content: center;  // Centrera horisontellt
+    align-items: center;  // Centrera vertikalt
+    font-size: 0.75em;
+
+    li {
+        margin: 0px;
+    }
+}
